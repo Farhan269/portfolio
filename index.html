@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6e94bb2fb2.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="logo"><img src="images/logo.png"></div>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <section id="profile">
+      <div class="section__pic-container">
+        <img src="images/user1.png"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Farhan Mashuq</h1>
+        <p class="section__text__p2">Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('images/cv.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+            <a href="https://www.linkedin.com/in/farhan-mashuq-3b3822253">
+                <img src="images/linkedin.png" alt="My LinkedIn profile" class="icon">
+            </a>
+          <a href="http://github.com/Farhan269">
+                <img src="images/github.png" alt="My Github profile" class="icon"/>
+          </a>
+          
+        </div>
+      </div>
+    </section>
+
+    </div>
+</div>
+
+
+
+<!-----------about-------------->
+
+<div id="about">
+    <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user2.png">
+
+            </div>
+            <div class="about-col-2">
+                
+                <p>Hello, and welcome to my portfolio! I'm Md. Farhan Mashuq, a passionate and dedicated to my work. As an enthusiastic developer, I thrive on creating innovative and impactful solutions that make a positive difference. With a strong educational background in BCSE, I have honed my skills in programming languages.<br>
+                What drives me is the desire to create seamless user experiences and deliver high-quality results. I believe in the power of collaboration and have had the pleasure of working with talented teams that share the same vision. My dedication to continuous learning and staying up-to-date with the latest industry trends allows me to bring fresh ideas and innovative approaches to every project.</p>
+
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                   
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>Web-design</span><br>Designing website</li>
+                        <li><span>Machine Learning</span><br>Different types of algorithm such as SVM, RF,KNN, XGB etc.</li>
+                        <li><span>problem-solving</span><br></li>
+                        <li><span>Good communication</span><br></li>
+                        <li><span>Good at teamwork</span><br></li>
+                        <li><span>Written and verbal communication</span><br></li>
+                        <li><span>Leadership, Teamwork</span><br></li>
+                    </ul>
+                </div>
+
+                
+
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>BCSE</span><br>International University of Business Agriculture and  
+                            Technology, (2020-2023)</li>
+                        <li><span>HSC</span><br>Govt. Science College, Dhaka, (2019)</li>
+                        <li><span>SSC</span><br>B. A. F Shaheen College, Dhaka, (2017)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------project-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Project</h1>
+
+        <div class="work-list">
+            <div class="work">
+                <img src="images/pc6.png">
+                <div class="layer">
+                    <h3>Educational Training site</h3>
+                    <p>Educational Training Site, a comprehensive online platform dedicated to empowering learners with knowledge, skills, and expertise across a wide range of subjects. </p>
+                    <a href="https://farhan269.github.io/Educational-Training-site/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/pic2.jpg">
+                <div class="layer">
+                    <h3>Drought Prediction</h3>
+                    <p>Machine learning models, specifically those based on supervised and unsupervised learning, have shown promising results in predicting drought conditions based on various data sources.</p>
+                    <a href="https://github.com/Farhan269/Drought-prediction.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/pc5.jpg">
+                <div class="layer">
+                    <h3>Weather app</h3>
+                    <p>Developed a weather app where we can see temperature, humidity, wind speed and weather condition for any city.
+                        </p>
+                    <a href="https://farhan269.github.io/weather-app"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!----------contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>farhanmashuq99@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+8801409237123</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/farhan.mashuq.10?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/farhan-mashuq-3b3822253"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="http://github.com/Farhan269"><i class="fa-brands fa-github"></i></a>
+                </div>
+                
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text", name="Name" placeholder="Your Name" required>
+                    <input type="email", name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-color-1">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Farhan Mashuq</p>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
